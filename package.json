@@ -1,0 +1,47 @@
+{
+  "name": "easy-personal-loans-website",
+  "version": "1.0.0",
+  "description": "Professional website for Easy Personal Loans - Quick & Hassle-Free Personal Loans in Bangalore",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/",
+    "dev": "live-server --port=3000 --open=/ --watch=css,js,images",
+    "build": "echo 'Build process - minify CSS and JS files'",
+    "test": "echo 'No tests specified'",
+    "lint:css": "stylelint css/**/*.css",
+    "lint:js": "eslint js/**/*.js",
+    "format": "prettier --write .",
+    "serve": "http-server -p 3000 -o"
+  },
+  "keywords": [
+    "personal-loans",
+    "finance",
+    "bangalore",
+    "loans",
+    "emi-calculator",
+    "website"
+  ],
+  "author": "Easy Personal Loans",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

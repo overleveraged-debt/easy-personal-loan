@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Personal Loans - Quick & Hassle-free Loans in Bangalore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-slate-800">
+
+    <!-- Floating Header -->
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-4">
+        <div class="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 flex items-center justify-between p-3 relative overflow-hidden">
+            <!-- Decorative gradient line -->
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600"></div>
+
+            <a href="#" class="flex items-center space-x-2 flex-shrink-0 relative z-10">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">EPL</span>
+                </div>
+                <span class="logo-text font-bold text-slate-800 tracking-tight">Easy Personal Loans</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-4">
+                <a href="#home" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                <a href="#services" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                <a href="#process" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                <a href="#partners" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Partners</a>
+                <button id="header-calculator-button" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Calculator</button>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <a href="#contact" class="btn-shine hidden sm:inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-1.5 px-3 sm:py-2 sm:px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-blue-500/40 text-sm sm:text-base">Apply Now</a>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="bg-slate-100 p-2 inline-flex items-center justify-center text-slate-500 hover:text-slate-600 hover:bg-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m4 6h-16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden fixed top-24 left-4 right-4 z-40" id="mobile-menu">
+        <div class="bg-white/95 backdrop-blur-lg rounded-xl shadow-xl border border-white/20 p-4 space-y-1 relative overflow-hidden">
+            <!-- Decorative gradient line -->
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600"></div>
+
+            <a href="#home" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Home</a>
+            <a href="#services" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Services</a>
+            <a href="#process" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Process</a>
+            <a href="#partners" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Partners</a>
+            <button id="mobile-calculator-button" class="text-left w-full mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Calculator</button>
+            <a href="#contact" class="btn-shine block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold mt-2 py-2 px-3 rounded-lg transition duration-300 text-sm">Apply Now</a>
+        </div>
+    </div>
+
+
+    <main id="home" class="pt-24">
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto max-w-full px-0">
+                <div class="relative min-h-[calc(90vh-6rem)] flex items-center overflow-hidden">
+                    <div id="hero-carousel" class="w-full h-full">
+                        <!-- Offer Slide 1: Special Interest Rate -->
+                        <div class="carousel-item active bg-gradient-to-br from-blue-50 via-white to-blue-100">
+                            <div class="hero-content w-full h-full flex flex-col-reverse md:flex-row items-center justify-center p-8 md:p-16 container mx-auto max-w-7xl">
+                                <div class="md:w-1/2 text-center md:text-left z-10">
+                                    <div class="inline-block bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 animate-pulse">
+                                        🔥 LIMITED TIME OFFER
+                                    </div>
+                                    <h1 class="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
+                                        Personal Loans Starting at
+                                        <span class="text-red-600">10.99%*</span>
+                                    </h1>
+                                    <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-xl">
+                                        Get instant personal loans up to ₹50 Lakhs with minimal documentation. Quick approval in 24 hours!
+                                    </p>
+                                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                                        <a href="#contact" class="btn-shine bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">Apply Now</a>
+                                        <a href="#" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base">Check Eligibility</a>
+                                    </div>
+                                </div>
+                                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                                    <div class="relative">
+                                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="Special Interest Rate Offer" class="rounded-2xl shadow-2xl max-w-sm md:max-w-md object-cover">
+                                        <div class="absolute inset-0 bg-blue-900/20 rounded-2xl"></div>
+                                        <div class="absolute top-4 left-4 bg-white text-blue-900 px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
+                                            10.99%* Interest
+                                        </div>
+                                        <div class="absolute -top-4 -right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-bounce">
+                                            Save ₹50K+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer Slide 2: Zero Processing Fee -->
+                        <div class="carousel-item bg-gradient-to-br from-green-50 via-white to-emerald-100">
+                            <div class="hero-content w-full h-full flex flex-col-reverse md:flex-row items-center justify-center p-8 md:p-16 container mx-auto max-w-7xl">
+                                <div class="md:w-1/2 text-center md:text-left z-10">
+                                    <div class="inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                        ✨ ZERO CHARGES
+                                    </div>
+                                    <h1 class="text-4xl md:text-6xl font-extrabold text-green-900 leading-tight">
+                                        <span class="text-red-600">₹0</span> Processing Fee
+                                    </h1>
+                                    <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-xl">
+                                        Apply this month and save on processing fees! Get your loan approved with zero upfront charges.
+                                    </p>
+                                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                                        <a href="#" class="btn-shine bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">Claim Offer</a>
+                                        <a href="#" class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                                    <div class="relative">
+                                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="Zero Processing Fee" class="rounded-2xl shadow-2xl max-w-sm md:max-w-md object-cover">
+                                        <div class="absolute inset-0 bg-green-900/20 rounded-2xl"></div>
+                                        <div class="absolute top-4 left-4 bg-white text-green-900 px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
+                                            ₹0 Processing Fee
+                                        </div>
+                                        <div class="absolute -top-4 -left-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">
+                                            💰 Save Money
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offer Slide 3: Quick Disbursal -->
+                        <div class="carousel-item bg-gradient-to-br from-purple-50 via-white to-violet-100">
+                            <div class="hero-content w-full h-full flex flex-col-reverse md:flex-row items-center justify-center p-8 md:p-16 container mx-auto max-w-7xl">
+                                <div class="md:w-1/2 text-center md:text-left z-10">
+                                    <div class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                        ⚡ INSTANT APPROVAL
+                                    </div>
+                                    <h1 class="text-4xl md:text-6xl font-extrabold text-purple-900 leading-tight">
+                                        Get Loan in
+                                        <span class="text-orange-600">24 Hours</span>
+                                    </h1>
+                                    <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-xl">
+                                        Fastest loan disbursal in Bangalore! From application to bank transfer - all within 24 hours.
+                                    </p>
+                                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                                        <a href="#contact" class="btn-shine bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">Apply Now</a>
+                                        <a href="#" class="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base">Calculate EMI</a>
+                                    </div>
+                                </div>
+                                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                                    <div class="relative">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="24 Hour Approval" class="rounded-2xl shadow-2xl max-w-sm md:max-w-md object-cover">
+                                        <div class="absolute inset-0 bg-purple-900/20 rounded-2xl"></div>
+                                        <div class="absolute top-4 left-4 bg-white text-purple-900 px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
+                                            24 Hour Approval
+                                        </div>
+                                        <div class="absolute -bottom-4 -right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">
+                                            ⚡ Super Fast
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-20" id="carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-20 sm:py-28 bg-white relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-10 left-10 w-20 h-20 border-2 border-blue-200 rounded-full opacity-30"></div>
+            <div class="absolute bottom-10 right-10 w-16 h-16 border-2 border-blue-300 rounded-full opacity-20"></div>
+            <div class="absolute top-1/2 left-5 w-2 h-20 bg-gradient-to-b from-blue-400 to-transparent opacity-30"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto revealable">
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Why Choose <span class="text-blue-600">Easy Personal Loans</span></h2>
+                    <p class="mt-5 text-lg text-slate-600">We're dedicated to providing a loan experience that is transparent, fast, and puts you first.</p>
+                </div>
+
+                <!-- Horizontal Grid Layout -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
+                    <div class="revealable group">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Quick Approval</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Get your loan application approved in record time with our streamlined digital process.</p>
+                        </div>
+                    </div>
+
+                    <div class="revealable group" style="transition-delay: 100ms;">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Minimal Documentation</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Apply with just the essential documents, making the process completely hassle-free.</p>
+                        </div>
+                    </div>
+
+                    <div class="revealable group" style="transition-delay: 200ms;">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">No Hidden Charges</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Complete transparency with no surprise fees or hidden charges in our loan process.</p>
+                        </div>
+                    </div>
+
+                    <div class="revealable group" style="transition-delay: 300ms;">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M5.625 9h12.75m-12.75 3h11.25m-11.25 3h11.25m-11.25 3h11.25M12 12.75h.007v.008H12V12.75z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Flexible Tenure</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Choose a repayment tenure from 12 to 84 months that suits your financial situation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-20 sm:py-28 bg-slate-50 relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-20 right-10 w-24 h-24 border-2 border-blue-200 rounded-full opacity-20"></div>
+            <div class="absolute bottom-20 left-10 w-32 h-2 bg-gradient-to-r from-blue-400 to-transparent opacity-30 rounded-full"></div>
+            <div class="absolute top-1/2 right-5 w-2 h-32 bg-gradient-to-b from-blue-400 to-transparent opacity-20"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto revealable">
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our <span class="text-blue-600">Services</span></h2>
+                    <p class="mt-5 text-lg text-slate-600">Whatever your reason, we have a personal loan solution tailored for you.</p>
+                </div>
+
+                <!-- Horizontal Grid Layout -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
+                    <div class="revealable group">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Travel Loan</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Fund your dream vacation with flexible repayment options. Make your travel dreams a reality.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-blue-600 font-semibold">Up to ₹25 Lakhs</div>
+                        </div>
+                    </div>
+
+                    <div class="revealable group" style="transition-delay: 100ms;">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-pink-500 to-red-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Wedding Loan</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Cover all wedding expenses from venue to jewelry. Celebrate your special day perfectly.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-pink-600 font-semibold">Up to ₹50 Lakhs</div>
+                        </div>
+                    </div>
+
+                    <div class="revealable group" style="transition-delay: 200ms;">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Medical Emergency</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Get instant funds for unexpected medical bills with our quick disbursal process.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-red-600 font-semibold">Instant Approval</div>
+                        </div>
+                    </div>
+
+                    <div class="revealable group" style="transition-delay: 300ms;">
+                        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h7.5" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Home Renovation</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Upgrade your living space with our home improvement loans covering all renovation needs.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-green-600 font-semibold">Low Interest Rates</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="process" class="py-20 sm:py-28 bg-white relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="pattern-bg absolute inset-0"></div>
+
+            <!-- Floating Decorative Shapes -->
+            <div class="floating-shapes">
+                <div class="floating-circle absolute top-20 left-10 opacity-20"></div>
+                <div class="floating-square absolute bottom-20 right-20 opacity-30"></div>
+                <div class="decorative-dots absolute top-1/3 right-1/4"></div>
+                <div class="decorative-dots absolute bottom-1/3 left-1/4"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto revealable">
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Get Your Loan in <span class="text-blue-600">3 Simple Steps</span></h2>
+                    <p class="mt-5 text-lg text-slate-600">Our process is designed to be quick, simple, and convenient for you.</p>
+                </div>
+
+                <!-- Horizontal Process Steps -->
+                <div class="mt-20 max-w-5xl mx-auto">
+                    <div class="flex flex-col md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
+                        <!-- Step 1 - Full width on mobile -->
+                        <div class="revealable text-center group md:col-span-1">
+                            <div class="relative">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl mx-auto shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                    1
+                                </div>
+                                <!-- Connecting Line (hidden on mobile) -->
+                                <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-blue-200 -translate-y-1/2"></div>
+                            </div>
+                            <div class="mt-4 sm:mt-6">
+                                <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Fill Application</h3>
+                                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Submit our simple online form with your basic details. It only takes a few minutes to complete.</p>
+                            </div>
+                        </div>
+
+                        <!-- Steps 2 and 3 - Side by side on mobile -->
+                        <div class="grid grid-cols-2 md:contents gap-6 md:gap-8 lg:gap-12">
+                            <div class="revealable text-center group md:col-span-1" style="transition-delay: 100ms;">
+                                <div class="relative">
+                                    <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl mx-auto shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                        2
+                                    </div>
+                                    <!-- Connecting Line (hidden on mobile) -->
+                                    <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-green-300 to-green-200 -translate-y-1/2"></div>
+                                </div>
+                                <div class="mt-4 sm:mt-6">
+                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Upload Documents</h3>
+                                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Verify your identity and income by uploading minimal required documents online.</p>
+                                </div>
+                            </div>
+
+                            <div class="revealable text-center group md:col-span-1" style="transition-delay: 200ms;">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl mx-auto shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                    3
+                                </div>
+                                <div class="mt-4 sm:mt-6">
+                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Get Money</h3>
+                                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Once approved, the loan amount is transferred directly to your bank account within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Statistics Section -->
+        <section id="stats" class="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
+                <div class="absolute bottom-10 right-10 w-24 h-24 border border-white rounded-full"></div>
+                <div class="absolute top-1/2 left-1/4 w-16 h-16 border border-white rounded-full"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="revealable">
+                        <div class="text-3xl md:text-4xl font-bold mb-2">
+                            <span class="counter" data-target="5000" data-suffix="+">0</span>
+                        </div>
+                        <div class="text-blue-200 text-sm md:text-base">Happy Customers</div>
+                    </div>
+                    <div class="revealable" style="transition-delay: 100ms;">
+                        <div class="text-3xl md:text-4xl font-bold mb-2">
+                            ₹<span class="counter" data-target="500" data-suffix="Cr+">0</span>
+                        </div>
+                        <div class="text-blue-200 text-sm md:text-base">Loans Disbursed</div>
+                    </div>
+                    <div class="revealable" style="transition-delay: 200ms;">
+                        <div class="text-3xl md:text-4xl font-bold mb-2">
+                            <span class="counter" data-target="24" data-suffix=" Hours">0</span>
+                        </div>
+                        <div class="text-blue-200 text-sm md:text-base">Average Approval</div>
+                    </div>
+                    <div class="revealable" style="transition-delay: 300ms;">
+                        <div class="text-3xl md:text-4xl font-bold mb-2">
+                            <span class="counter" data-target="15" data-suffix="+">0</span>
+                        </div>
+                        <div class="text-blue-200 text-sm md:text-base">Banking Partners</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Partners Section -->
+        <section id="partners" class="py-20 sm:py-28 bg-slate-50 relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-10 left-1/4 w-20 h-20 border-2 border-blue-200 rounded-full opacity-20"></div>
+            <div class="absolute bottom-10 right-1/4 w-16 h-16 border-2 border-purple-200 rounded-full opacity-30"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto revealable">
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our <span class="text-blue-600">Partners</span></h2>
+                    <p class="mt-5 text-lg text-slate-600">We partner with India's leading banks and NBFCs to offer you the best loan deals.</p>
+                </div>
+
+                <!-- Partners Logos Marquee -->
+                <div class="mt-16 marquee overflow-hidden">
+                    <div class="marquee-content-reverse flex items-center space-x-16 md:space-x-24">
+                        <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/Kotak_Mahindra_Bank_logo 2.webp" alt="Kotak Mahindra Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/tata capital logo.webp" alt="Tata Capital" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/sbi logo.webp" alt="State Bank of India" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/IDFC-logo-website.webp" alt="IDFC Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/indusind-bank1.webp" alt="IndusInd Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/Punjab-National-Bank-logo.webp" alt="Punjab National Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/union bank logo.webp" alt="Union Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <!-- Duplicate for seamless loop -->
+                        <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                        <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="skyline-bg py-20 sm:py-28 bg-gradient-to-r from-blue-600 to-indigo-700 text-white overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto revealable">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">What Our Clients Say</h2>
+                    <p class="mt-5 text-lg text-blue-200">Real stories from people we've helped achieve their financial goals.</p>
+                </div>
+                <div class="relative mt-16 max-w-3xl mx-auto">
+                    <div id="testimonial-carousel" class="relative min-h-[25rem]">
+                        <div class="testimonial-item active"><div class="bg-white/10 backdrop-blur-sm p-8 md:p-10 rounded-2xl ring-1 ring-white/20 shadow-2xl shadow-black/20 text-center relative"><img src="https://placehold.co/80x80/E2E8F0/475569?text=PS" alt="Priya Sharma" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-slate-400"><p class="text-slate-200 text-lg leading-relaxed">"The team at Easy Personal Loans was incredibly professional. They guided me through the entire process for my wedding loan and I got the amount in my account within a day. Highly recommended!"</p><div class="mt-6 font-semibold text-white">Priya Sharma</div><div class="text-sm text-blue-200">Software Engineer, Bangalore</div></div></div>
+                        <div class="testimonial-item"><div class="bg-white/10 backdrop-blur-sm p-8 md:p-10 rounded-2xl ring-1 ring-white/20 shadow-2xl shadow-black/20 text-center relative"><img src="https://placehold.co/80x80/E2E8F0/475569?text=AK" alt="Amit Kumar" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-slate-400"><p class="text-slate-200 text-lg leading-relaxed">"I needed urgent funds for a medical emergency. The process was so quick and hassle-free, it was a huge relief. Their transparency about charges is commendable."</p><div class="mt-6 font-semibold text-white">Amit Kumar</div><div class="text-sm text-blue-200">Marketing Manager, Bangalore</div></div></div>
+                        <div class="testimonial-item"><div class="bg-white/10 backdrop-blur-sm p-8 md:p-10 rounded-2xl ring-1 ring-white/20 shadow-2xl shadow-black/20 text-center relative"><img src="https://placehold.co/80x80/E2E8F0/475569?text=AR" alt="Anjali Rao" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-slate-400"><p class="text-slate-200 text-lg leading-relaxed">"I consolidated my credit card debt with a personal loan from them. The interest rate was much better, and now I have a single EMI to manage. Excellent service!"</p><div class="mt-6 font-semibold text-white">Anjali Rao</div><div class="text-sm text-blue-200">Architect, Bangalore</div></div></div>
+                    </div>
+                    <button id="prev-testimonial" class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-4 md:-translate-x-16 p-3 rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition-all duration-200 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button>
+                    <button id="next-testimonial" class="absolute top-1/2 -translate-y-1/2 right-0 translate-x-4 md:translate-x-16 p-3 rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition-all duration-200 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 sm:py-28 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+            <!-- Enhanced Decorative Elements -->
+            <div class="absolute top-10 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-30 animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-15"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto revealable">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mb-6">
+                        <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Frequently Asked <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Questions</span></h2>
+                    <p class="mt-5 text-lg text-slate-600">Have questions? We have answers. If you can't find it here, contact us.</p>
+                </div>
+
+                <!-- Single Column FAQ Layout for Better Readability -->
+                <div class="mt-16 max-w-3xl mx-auto space-y-4">
+                    <div class="revealable faq-item bg-white border-l-4 border-blue-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-6 font-semibold text-slate-800 hover:bg-slate-50 transition-colors">
+                            <span class="text-lg">What is the eligibility criteria for a personal loan?</span>
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 ml-4">
+                                <svg class="faq-arrow h-4 w-4 text-blue-600 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-slate-600 leading-relaxed bg-slate-25">
+                            <div class="border-t border-slate-100 pt-4">
+                                Typically, you need to be a salaried individual between 21 and 60 years of age with a minimum monthly income, varying by city. A good credit score is also important for quick approval.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="revealable faq-item bg-white border-l-4 border-purple-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" style="transition-delay: 100ms;">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-6 font-semibold text-slate-800 hover:bg-slate-50 transition-colors">
+                            <span class="text-lg">What documents are required to apply?</span>
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 ml-4">
+                                <svg class="faq-arrow h-4 w-4 text-purple-600 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-slate-600 leading-relaxed bg-slate-25">
+                            <div class="border-t border-slate-100 pt-4">
+                                We require minimal documentation: Proof of Identity (Aadhaar/PAN card), Proof of Address, and Proof of Income (latest salary slips and bank statements).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="revealable faq-item bg-white border-l-4 border-green-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" style="transition-delay: 200ms;">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-6 font-semibold text-slate-800 hover:bg-slate-50 transition-colors">
+                            <span class="text-lg">How quickly can I get the loan amount?</span>
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 ml-4">
+                                <svg class="faq-arrow h-4 w-4 text-green-600 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-slate-600 leading-relaxed bg-slate-25">
+                            <div class="border-t border-slate-100 pt-4">
+                                Once your application is approved, the loan amount is typically disbursed within 24 hours directly to your bank account.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="revealable faq-item bg-white border-l-4 border-orange-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" style="transition-delay: 300ms;">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-6 font-semibold text-slate-800 hover:bg-slate-50 transition-colors">
+                            <span class="text-lg">Can I prepay my loan without penalty?</span>
+                            <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 ml-4">
+                                <svg class="faq-arrow h-4 w-4 text-orange-600 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-slate-600 leading-relaxed bg-slate-25">
+                            <div class="border-t border-slate-100 pt-4">
+                                Yes, you can prepay your loan partially or fully. Prepayment charges may apply depending on the lender and loan terms.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="floating-shapes">
+                <div class="floating-circle absolute top-20 right-20 opacity-10"></div>
+                <div class="floating-square absolute bottom-20 left-20 opacity-15"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="revealable">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Get in Touch with Our <span class="text-blue-600">Loan Experts</span></h2>
+                        <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                            Have questions about personal loans? Our experienced team in Bangalore is here to help you find the perfect loan solution.
+                        </p>
+                        <div class="mt-8 space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Call Us</div>
+                                    <div class="text-slate-600">+91 98765 43210</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Email Us</div>
+                                    <div class="text-slate-600">loans@easypersonalloans.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Visit Us</div>
+                                    <div class="text-slate-600">Bangalore, Karnataka</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revealable" style="transition-delay: 200ms;">
+                        <div class="bg-gradient-to-br from-blue-600 to-purple-700 p-8 rounded-2xl text-white shadow-2xl">
+                            <h3 class="text-2xl font-bold mb-4">Quick Apply Form</h3>
+                            <form class="space-y-4">
+                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
+                                <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
+                                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
+                                <select class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-white/50" style="color: white;">
+                                    <option value="" style="color: black; background-color: white;">Loan Amount</option>
+                                    <option value="1-5" style="color: black; background-color: white;">₹1-5 Lakhs</option>
+                                    <option value="5-10" style="color: black; background-color: white;">₹5-10 Lakhs</option>
+                                    <option value="10-25" style="color: black; background-color: white;">₹10-25 Lakhs</option>
+                                    <option value="25+" style="color: black; background-color: white;">₹25+ Lakhs</option>
+                                </select>
+                                <button type="submit" class="w-full bg-white text-blue-600 font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                                    Get Instant Quote
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-slate-900 to-slate-800 text-white relative overflow-hidden">
+        <!-- Decorative background -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 w-40 h-40 border border-white rounded-full"></div>
+            <div class="absolute bottom-10 right-10 w-32 h-32 border border-white rounded-full"></div>
+            <div class="absolute top-1/2 left-1/3 w-24 h-24 border border-white rounded-full"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">EPL</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Easy Personal Loans</h3>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+                        Your reliable financial partner in Bangalore. We are dedicated to providing fast, transparent, and hassle-free personal loans to help you achieve your dreams.
+                    </p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.55v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" /></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 0 1 2.063-2.065 2.064 2.064 0 0 1 2.063 2.065c0 1.14-.925 2.065-2.063 2.065zm1.782 13.019H3.557V9h3.562v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" /></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" /></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-200 mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#home" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Home</span></a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Services</span></a></li>
+                        <li><a href="#process" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Process</span></a></li>
+                        <li><a href="#partners" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Partners</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-200 mb-4">Loan Types</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Personal Loan</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Travel Loan</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Wedding Loan</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Medical Emergency</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-200 mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            <span class="text-slate-400">Bangalore, Karnataka</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                            <span class="text-slate-400">loans@easypersonalloans.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                            <span class="text-slate-400">+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-slate-500">&copy; 2025 Easy Personal Loans. All rights reserved.</p>
+                    <div class="mt-4 md:mt-0 flex space-x-6 text-sm">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">Terms & Conditions</a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- EMI Calculator Modal -->
+    <div id="calculator-modal" class="modal fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-2 sm:p-4 z-50 opacity-0 pointer-events-none">
+        <div id="calculator-modal-content" class="bg-white rounded-xl sm:rounded-2xl shadow-2xl w-full max-w-sm sm:max-w-4xl relative transform max-h-[90vh] overflow-y-auto">
+            <button id="close-calculator-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors z-20">
+                <span class="sr-only">Close</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-12">
+                    <h2 class="text-3xl font-extrabold text-slate-900">EMI Calculator</h2>
+                    <p class="mt-4 text-slate-600">Plan your finances by calculating your Equated Monthly Installment (EMI).</p>
+                    <div class="mt-8 space-y-6">
+                        <div>
+                            <label for="loanAmount" class="block text-sm font-medium text-slate-700">Loan Amount (₹)</label>
+                            <input type="number" id="loanAmount" class="mt-1 block w-full px-4 py-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-colors" value="500000">
+                        </div>
+                        <div>
+                            <label for="interestRate" class="block text-sm font-medium text-slate-700">Interest Rate (% p.a.)</label>
+                            <input type="number" id="interestRate" class="mt-1 block w-full px-4 py-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-colors" value="12.5">
+                        </div>
+                        <div>
+                            <label for="loanTenure" class="block text-sm font-medium text-slate-700">Loan Tenure (Years)</label>
+                            <input type="number" id="loanTenure" class="mt-1 block w-full px-4 py-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-colors" value="5">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-results-bg lg:w-1/2 flex flex-col items-center justify-center bg-blue-600 text-white p-8 rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none text-center">
+                    <p class="text-lg font-medium text-blue-200">Your Monthly EMI</p>
+                    <p id="emiResult" class="text-4xl lg:text-5xl font-bold my-4">₹ 11,249</p>
+                    <div class="w-full text-left text-blue-100 mt-6 text-sm space-y-2">
+                        <div class="flex justify-between py-2 border-b border-blue-500/50"><span>Principal Amount</span><span id="principalResult" class="font-semibold">₹ 5,00,000</span></div>
+                        <div class="flex justify-between py-2 border-b border-blue-500/50"><span>Total Interest</span><span id="interestResult" class="font-semibold">₹ 1,74,932</span></div>
+                        <div class="flex justify-between py-2"><span>Total Payable</span><span id="totalResult" class="font-semibold">₹ 6,74,932</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

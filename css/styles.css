@@ -1,0 +1,373 @@
+/* Easy Personal Loans - Main Stylesheet */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8fafc; /* bg-slate-50 */
+}
+
+/* Custom color variables inspired by loansjagat.com */
+:root {
+    --primary-blue: #1E40AF;
+    --secondary-blue: #3B82F6;
+    --accent-blue: #60A5FA;
+    --light-blue: #DBEAFE;
+    --success-green: #059669;
+    --warning-orange: #EA580C;
+    --error-red: #DC2626;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.hero-content h1, .hero-content p, .hero-content a {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.active .hero-content h1 { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
+.active .hero-content p { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
+.active .hero-content a { opacity: 1; transform: translateY(0); transition-delay: 0.4s; }
+
+.skyline-bg {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.skyline-bg::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg width='800' height='200' viewBox='0 0 800 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23ffffff' stroke-width='2' fill='none'%3E%3Cpath d='M350 180 L350 120 L380 90 L420 90 L450 120 L450 180' /%3E%3Cpath d='M400 70 A 20 20 0 0 1 400 30 A 20 20 0 0 1 400 70 Z' /%3E%3Cpath d='M280 180 L280 140 L320 140 L320 180' /%3E%3Cpath d='M480 180 L480 140 L520 140 L520 180' /%3E%3Cpath d='M200 180 L200 150 L250 150 L250 180' /%3E%3Cpath d='M550 180 L550 150 L600 150 L600 180' /%3E%3Cline x1='150' y1='180' x2='650' y2='180'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Navigation Styles */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #3b82f6;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.skyline-bg > * {
+    position: relative;
+    z-index: 5;
+}
+
+.calculator-results-bg {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.calculator-results-bg::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg width='800' height='200' viewBox='0 0 800 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23ffffff' stroke-width='2' fill='none'%3E%3Cpath d='M350 180 L350 120 L380 90 L420 90 L450 120 L450 180' /%3E%3Cpath d='M400 70 A 20 20 0 0 1 400 30 A 20 20 0 0 1 400 70 Z' /%3E%3Cpath d='M280 180 L280 140 L320 140 L320 180' /%3E%3Cpath d='M480 180 L480 140 L520 140 L520 180' /%3E%3Cpath d='M200 180 L200 150 L250 150 L250 180' /%3E%3Cpath d='M550 180 L550 150 L600 150 L600 180' /%3E%3Cline x1='150' y1='180' x2='650' y2='180'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+}
+.calculator-results-bg > * {
+    position: relative;
+    z-index: 5;
+}
+
+/* Modern decorative elements */
+.decorative-dots {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-blue);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.decorative-dots::before,
+.decorative-dots::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-blue);
+    border-radius: 50%;
+}
+
+.decorative-dots::before {
+    top: -12px;
+    left: 0;
+}
+
+.decorative-dots::after {
+    top: 12px;
+    left: 0;
+}
+
+.floating-shapes {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pattern-bg {
+    background-image:
+        radial-gradient(circle at 25% 25%, var(--light-blue) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, var(--light-blue) 2px, transparent 2px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    opacity: 0.1;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Reveal Animation */
+.revealable {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.revealable.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Shine Effect */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.btn-shine:hover::before {
+    left: 100%;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.testimonial-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    position: relative;
+    transform: scale(1);
+}
+
+.testimonial-item:not(.active) {
+    display: none;
+}
+
+/* FAQ Styles */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 250px;
+    opacity: 1;
+}
+
+.faq-item.open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-arrow {
+    transition: transform 0.3s ease-out;
+}
+
+/* Marquee Styles */
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content-reverse {
+    display: inline-block;
+    animation: marquee-reverse 40s linear infinite;
+}
+
+/* Floating Shapes */
+.floating-circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-square {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(147, 51, 234, 0.3);
+    transform: rotate(45deg);
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Decorative Dots */
+.decorative-dots {
+    width: 60px;
+    height: 60px;
+    background-image: radial-gradient(circle, rgba(59, 130, 246, 0.3) 2px, transparent 2px);
+    background-size: 15px 15px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+    
+    .testimonial-item {
+        padding: 1rem;
+    }
+    
+    .faq-item {
+        margin-bottom: 1rem;
+    }
+    
+    .stats-section {
+        padding: 2rem 0;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.opacity-0 {
+    opacity: 0;
+}
+
+.modal:not(.opacity-0) {
+    opacity: 1;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
