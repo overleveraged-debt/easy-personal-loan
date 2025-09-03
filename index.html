@@ -14,19 +14,83 @@
 
     <!-- Floating Header -->
     <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-4">
-        <div class="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 flex items-center justify-between p-3 relative overflow-hidden">
+        <div class="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 flex items-center justify-between p-3 relative">
             <!-- Decorative gradient line -->
             <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600"></div>
 
             <a href="#" class="flex items-center space-x-2 flex-shrink-0 relative z-10">
-                <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                    <span class="text-white font-bold text-sm">EPL</span>
-                </div>
-                <span class="logo-text font-bold text-slate-800 tracking-tight">Easy Personal Loans</span>
+                <img src="logo easy personal loan.PNG" alt="Easy Personal Loans" class="w-10 h-10 object-contain">
+                <span class="logo-text font-bold text-slate-800 tracking-tight hidden sm:block">Easy Personal Loans</span>
             </a>
             <nav class="hidden md:flex items-center space-x-4">
                 <a href="#home" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
-                <a href="#services" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                <div class="relative group">
+                    <button class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                        Products
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[99999]">
+                        <div class="p-4">
+                            <div class="space-y-3">
+                                <a href="#contact" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors cursor-pointer">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Fresh Personal Loan</h4>
+                                        <p class="text-sm text-gray-600">Starting @ 10.49% p.a</p>
+                                        <div class="grid grid-cols-1 gap-1 mt-2">
+                                            <span class="text-xs text-green-600 flex items-center">
+                                                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                                100% Digital Process
+                                            </span>
+                                            <span class="text-xs text-green-600 flex items-center">
+                                                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                                Loan Upto 50 Lacs
+                                            </span>
+                                            <span class="text-xs text-green-600 flex items-center">
+                                                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                                Best Deal Guaranteed
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#contact" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors cursor-pointer">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Balance Transfer Personal Loan</h4>
+                                        <p class="text-sm text-gray-600">Transfer your existing loan</p>
+                                    </div>
+                                </a>
+                                <a href="#contact" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-purple-50 transition-colors cursor-pointer">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Overdraft Personal Loan</h4>
+                                        <p class="text-sm text-gray-600">Flexible credit facility</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a href="#process" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Process</a>
                 <a href="#partners" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Partners</a>
                 <button id="header-calculator-button" class="nav-link relative text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Calculator</button>
@@ -43,18 +107,90 @@
         </div>
     </header>
 
-    <!-- Mobile menu -->
-    <div class="md:hidden hidden fixed top-24 left-4 right-4 z-40" id="mobile-menu">
-        <div class="bg-white/95 backdrop-blur-lg rounded-xl shadow-xl border border-white/20 p-4 space-y-1 relative overflow-hidden">
-            <!-- Decorative gradient line -->
-            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600"></div>
+    <!-- Mobile menu backdrop -->
+    <div class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300" id="mobile-menu-backdrop"></div>
 
-            <a href="#home" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Home</a>
-            <a href="#services" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Services</a>
-            <a href="#process" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Process</a>
-            <a href="#partners" class="mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Partners</a>
-            <button id="mobile-calculator-button" class="text-left w-full mobile-nav-link text-slate-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Calculator</button>
-            <a href="#contact" class="btn-shine block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold mt-2 py-2 px-3 rounded-lg transition duration-300 text-sm">Apply Now</a>
+    <!-- Mobile menu -->
+    <div class="md:hidden fixed top-0 left-0 h-full w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl" id="mobile-menu">
+        <div class="flex flex-col h-full">
+            <!-- Header -->
+            <div class="flex items-center justify-between p-4 border-b border-gray-200">
+                <div class="flex items-center space-x-2">
+                    <img src="images/logo.webp" alt="Easy Personal Loans" class="h-8 w-auto">
+                    <span class="text-lg font-bold text-gray-900">Easy Personal Loans</span>
+                </div>
+                <button id="mobile-menu-close" class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="flex-1 overflow-y-auto py-4">
+                <nav class="space-y-1 px-4">
+                    <a href="#home" class="mobile-nav-link flex items-center space-x-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 px-3 py-3 rounded-lg text-base font-medium transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+
+                    <div class="mobile-products-dropdown">
+                        <button class="mobile-products-toggle w-full flex items-center justify-between text-gray-700 hover:bg-blue-50 hover:text-blue-700 px-3 py-3 rounded-lg text-base font-medium transition-all duration-300">
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                                <span>Products</span>
+                            </div>
+                            <svg class="w-4 h-4 mobile-products-arrow transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mobile-products-content hidden mt-2 ml-8 space-y-2">
+                            <a href="#contact" class="block bg-blue-50 p-3 rounded-lg hover:bg-blue-100 transition-colors duration-300">
+                                <h4 class="font-semibold text-blue-900 text-sm">Fresh Personal Loan</h4>
+                                <p class="text-xs text-blue-700">Starting @ 10.49% p.a</p>
+                            </a>
+                            <a href="#contact" class="block bg-green-50 p-3 rounded-lg hover:bg-green-100 transition-colors duration-300">
+                                <h4 class="font-semibold text-green-900 text-sm">Balance Transfer Loan</h4>
+                                <p class="text-xs text-green-700">Transfer existing loan</p>
+                            </a>
+                            <a href="#contact" class="block bg-purple-50 p-3 rounded-lg hover:bg-purple-100 transition-colors duration-300">
+                                <h4 class="font-semibold text-purple-900 text-sm">Overdraft Loan</h4>
+                                <p class="text-xs text-purple-700">Flexible credit facility</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#process" class="mobile-nav-link flex items-center space-x-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 px-3 py-3 rounded-lg text-base font-medium transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Process</span>
+                    </a>
+
+                    <a href="#partners" class="mobile-nav-link flex items-center space-x-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 px-3 py-3 rounded-lg text-base font-medium transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <span>Partners</span>
+                    </a>
+
+                    <button id="mobile-calculator-button" class="mobile-nav-link w-full flex items-center space-x-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 px-3 py-3 rounded-lg text-base font-medium transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>Calculator</span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Footer -->
+            <div class="p-4 border-t border-gray-200">
+                <a href="#contact" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-blue-500/40 block text-center">Apply Now</a>
+            </div>
         </div>
     </div>
 
@@ -62,107 +198,27 @@
     <main id="home" class="pt-24">
         <!-- Hero Section -->
         <section class="bg-white">
-            <div class="container mx-auto max-w-full px-0">
-                <div class="relative min-h-[calc(90vh-6rem)] flex items-center overflow-hidden">
+            <div class="container mx-auto max-w-7xl px-4 md:px-8 lg:px-12">
+                <div class="relative min-h-[calc(90vh-6rem)] overflow-hidden rounded-2xl">
                     <div id="hero-carousel" class="w-full h-full">
-                        <!-- Offer Slide 1: Special Interest Rate -->
-                        <div class="carousel-item active bg-gradient-to-br from-blue-50 via-white to-blue-100">
-                            <div class="hero-content w-full h-full flex flex-col-reverse md:flex-row items-center justify-center p-8 md:p-16 container mx-auto max-w-7xl">
-                                <div class="md:w-1/2 text-center md:text-left z-10">
-                                    <div class="inline-block bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 animate-pulse">
-                                        🔥 LIMITED TIME OFFER
-                                    </div>
-                                    <h1 class="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
-                                        Personal Loans Starting at
-                                        <span class="text-red-600">10.99%*</span>
-                                    </h1>
-                                    <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-xl">
-                                        Get instant personal loans up to ₹50 Lakhs with minimal documentation. Quick approval in 24 hours!
-                                    </p>
-                                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
-                                        <a href="#contact" class="btn-shine bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">Apply Now</a>
-                                        <a href="#" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base">Check Eligibility</a>
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                                    <div class="relative">
-                                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="Special Interest Rate Offer" class="rounded-2xl shadow-2xl max-w-sm md:max-w-md object-cover">
-                                        <div class="absolute inset-0 bg-blue-900/20 rounded-2xl"></div>
-                                        <div class="absolute top-4 left-4 bg-white text-blue-900 px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
-                                            10.99%* Interest
-                                        </div>
-                                        <div class="absolute -top-4 -right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-bounce">
-                                            Save ₹50K+
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- Hero Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="hero-content w-full h-full relative bg-gradient-to-br from-blue-50 to-purple-50">
+                                <img src="1.webp" alt="Personal Loans" class="w-full h-[calc(90vh-6rem)] object-contain">
                             </div>
                         </div>
 
-                        <!-- Offer Slide 2: Zero Processing Fee -->
-                        <div class="carousel-item bg-gradient-to-br from-green-50 via-white to-emerald-100">
-                            <div class="hero-content w-full h-full flex flex-col-reverse md:flex-row items-center justify-center p-8 md:p-16 container mx-auto max-w-7xl">
-                                <div class="md:w-1/2 text-center md:text-left z-10">
-                                    <div class="inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                                        ✨ ZERO CHARGES
-                                    </div>
-                                    <h1 class="text-4xl md:text-6xl font-extrabold text-green-900 leading-tight">
-                                        <span class="text-red-600">₹0</span> Processing Fee
-                                    </h1>
-                                    <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-xl">
-                                        Apply this month and save on processing fees! Get your loan approved with zero upfront charges.
-                                    </p>
-                                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
-                                        <a href="#" class="btn-shine bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">Claim Offer</a>
-                                        <a href="#" class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                                    <div class="relative">
-                                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="Zero Processing Fee" class="rounded-2xl shadow-2xl max-w-sm md:max-w-md object-cover">
-                                        <div class="absolute inset-0 bg-green-900/20 rounded-2xl"></div>
-                                        <div class="absolute top-4 left-4 bg-white text-green-900 px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
-                                            ₹0 Processing Fee
-                                        </div>
-                                        <div class="absolute -top-4 -left-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">
-                                            💰 Save Money
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- Hero Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="hero-content w-full h-full relative bg-gradient-to-br from-blue-50 to-purple-50">
+                                <img src="2.webp" alt="Personal Loans" class="w-full h-[calc(90vh-6rem)] object-contain">
                             </div>
                         </div>
 
-                        <!-- Offer Slide 3: Quick Disbursal -->
-                        <div class="carousel-item bg-gradient-to-br from-purple-50 via-white to-violet-100">
-                            <div class="hero-content w-full h-full flex flex-col-reverse md:flex-row items-center justify-center p-8 md:p-16 container mx-auto max-w-7xl">
-                                <div class="md:w-1/2 text-center md:text-left z-10">
-                                    <div class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                                        ⚡ INSTANT APPROVAL
-                                    </div>
-                                    <h1 class="text-4xl md:text-6xl font-extrabold text-purple-900 leading-tight">
-                                        Get Loan in
-                                        <span class="text-orange-600">24 Hours</span>
-                                    </h1>
-                                    <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-xl">
-                                        Fastest loan disbursal in Bangalore! From application to bank transfer - all within 24 hours.
-                                    </p>
-                                    <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
-                                        <a href="#contact" class="btn-shine bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">Apply Now</a>
-                                        <a href="#" class="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-bold py-2 px-4 sm:py-3 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base">Calculate EMI</a>
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                                    <div class="relative">
-                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="24 Hour Approval" class="rounded-2xl shadow-2xl max-w-sm md:max-w-md object-cover">
-                                        <div class="absolute inset-0 bg-purple-900/20 rounded-2xl"></div>
-                                        <div class="absolute top-4 left-4 bg-white text-purple-900 px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
-                                            24 Hour Approval
-                                        </div>
-                                        <div class="absolute -bottom-4 -right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">
-                                            ⚡ Super Fast
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- Hero Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="hero-content w-full h-full relative bg-gradient-to-br from-blue-50 to-purple-50">
+                                <img src="3.webp" alt="Personal Loans" class="w-full h-[calc(90vh-6rem)] object-contain">
                             </div>
                         </div>
                     </div>
@@ -246,7 +302,7 @@
 
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-4xl mx-auto revealable">
-                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our <span class="text-blue-600">Services</span></h2>
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our <span class="text-blue-600">Products</span></h2>
                     <p class="mt-5 text-lg text-slate-600">Whatever your reason, we have a personal loan solution tailored for you.</p>
                 </div>
 
@@ -254,53 +310,53 @@
                 <div class="mt-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
                     <div class="revealable group">
                         <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Travel Loan</h3>
-                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Fund your dream vacation with flexible repayment options. Make your travel dreams a reality.</p>
-                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-blue-600 font-semibold">Up to ₹25 Lakhs</div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Fresh Personal Loan</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Get instant personal loans with competitive interest rates starting at 10.49% p.a.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-blue-600 font-semibold">Starting @ 10.49% p.a</div>
                         </div>
                     </div>
 
                     <div class="revealable group" style="transition-delay: 100ms;">
                         <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-pink-500 to-red-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Wedding Loan</h3>
-                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Cover all wedding expenses from venue to jewelry. Celebrate your special day perfectly.</p>
-                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-pink-600 font-semibold">Up to ₹50 Lakhs</div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Balance Transfer Personal Loan</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Transfer your existing high-interest loans to get better rates and save money.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-green-600 font-semibold">Save on Interest</div>
                         </div>
                     </div>
 
                     <div class="revealable group" style="transition-delay: 200ms;">
                         <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Medical Emergency</h3>
-                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Get instant funds for unexpected medical bills with our quick disbursal process.</p>
-                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-red-600 font-semibold">Instant Approval</div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Overdraft Personal Loan</h3>
+                            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Flexible credit facility that allows you to withdraw funds as per your requirement.</p>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-purple-600 font-semibold">Flexible Credit</div>
                         </div>
                     </div>
 
                     <div class="revealable group" style="transition-delay: 300ms;">
                         <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 h-full">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h7.5" />
                                 </svg>
                             </div>
                             <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Home Renovation</h3>
                             <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Upgrade your living space with our home improvement loans covering all renovation needs.</p>
-                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-green-600 font-semibold">Low Interest Rates</div>
+                            <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-orange-600 font-semibold">Low Interest Rates</div>
                         </div>
                     </div>
                 </div>
@@ -308,7 +364,7 @@
         </section>
 
         <!-- How it works -->
-        <section id="process" class="py-20 sm:py-28 bg-white relative overflow-hidden">
+        <section id="process" class="py-20 sm:py-28 bg-gradient-to-br from-blue-50 to-purple-50 relative overflow-hidden">
             <!-- Background Pattern -->
             <div class="pattern-bg absolute inset-0"></div>
 
@@ -321,55 +377,85 @@
             </div>
 
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="text-center max-w-4xl mx-auto revealable">
-                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Get Your Loan in <span class="text-blue-600">3 Simple Steps</span></h2>
+                <div class="text-center max-w-4xl mx-auto revealable mb-16">
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">3 Easy Steps to Apply for Loans</h2>
                     <p class="mt-5 text-lg text-slate-600">Our process is designed to be quick, simple, and convenient for you.</p>
                 </div>
 
-                <!-- Horizontal Process Steps -->
-                <div class="mt-20 max-w-5xl mx-auto">
-                    <div class="flex flex-col md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
-                        <!-- Step 1 - Full width on mobile -->
-                        <div class="revealable text-center group md:col-span-1">
-                            <div class="relative">
-                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl mx-auto shadow-xl group-hover:scale-110 transition-transform duration-300">
-                                    1
-                                </div>
-                                <!-- Connecting Line (hidden on mobile) -->
-                                <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-300 to-blue-200 -translate-y-1/2"></div>
-                            </div>
-                            <div class="mt-4 sm:mt-6">
-                                <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Fill Application</h3>
-                                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Submit our simple online form with your basic details. It only takes a few minutes to complete.</p>
-                            </div>
-                        </div>
-
-                        <!-- Steps 2 and 3 - Side by side on mobile -->
-                        <div class="grid grid-cols-2 md:contents gap-6 md:gap-8 lg:gap-12">
-                            <div class="revealable text-center group md:col-span-1" style="transition-delay: 100ms;">
-                                <div class="relative">
-                                    <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl mx-auto shadow-xl group-hover:scale-110 transition-transform duration-300">
-                                        2
+                <!-- Modern Process Steps -->
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mobile-steps-layout">
+                        <!-- Mobile: Step 1 in first row -->
+                        <!-- Step 1 -->
+                        <div class="revealable text-center group step-1-mobile">
+                            <div class="relative mb-8 step-circle-container">
+                                <div class="w-32 h-32 mx-auto relative step-circle">
+                                    <!-- Outer Ring -->
+                                    <div class="absolute inset-0 rounded-full border-4 border-red-200"></div>
+                                    <!-- Inner Circle -->
+                                    <div class="absolute inset-2 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                        <span class="text-white font-bold text-3xl step-number">01</span>
                                     </div>
-                                    <!-- Connecting Line (hidden on mobile) -->
-                                    <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-green-300 to-green-200 -translate-y-1/2"></div>
+                                    <!-- Connecting Arrow (hidden on mobile) -->
+                                    <div class="hidden md:block absolute top-1/2 -right-6 transform -translate-y-1/2">
+                                        <svg class="w-12 h-8 text-red-300" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="mt-4 sm:mt-6">
-                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Upload Documents</h3>
-                                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Verify your identity and income by uploading minimal required documents online.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-red-100 step-card">
+                                <h3 class="text-xl font-bold text-red-600 mb-3 step-title">Fill Basic Details</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed step-description">Help us know your name, employment status, type of loan requirement, etc. amount, etc.</p>
+                            </div>
+                        </div>
+
+                        <!-- Mobile: Steps 2 and 3 in second row -->
+                        <div class="mobile-steps-row-2">
+                            <!-- Step 2 -->
+                            <div class="revealable text-center group step-2-mobile" style="transition-delay: 100ms;">
+                                <div class="relative mb-8 step-circle-container">
+                                    <div class="w-32 h-32 mx-auto relative step-circle">
+                                        <!-- Outer Ring -->
+                                        <div class="absolute inset-0 rounded-full border-4 border-orange-200"></div>
+                                        <!-- Inner Circle -->
+                                        <div class="absolute inset-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                            <span class="text-white font-bold text-3xl step-number">02</span>
+                                        </div>
+                                        <!-- Connecting Arrow (hidden on mobile) -->
+                                        <div class="hidden md:block absolute top-1/2 -right-6 transform -translate-y-1/2">
+                                            <svg class="w-12 h-8 text-orange-300" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-6 rounded-xl shadow-lg border border-orange-100 step-card">
+                                    <h3 class="text-xl font-bold text-orange-600 mb-3 step-title">Self Check Eligibility</h3>
+                                    <p class="text-sm text-slate-600 leading-relaxed step-description">With the help of the submitted information, you can learn about your eligibility for a loan application.</p>
                                 </div>
                             </div>
 
-                            <div class="revealable text-center group md:col-span-1" style="transition-delay: 200ms;">
-                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl mx-auto shadow-xl group-hover:scale-110 transition-transform duration-300">
-                                    3
+                            <!-- Step 3 -->
+                            <div class="revealable text-center group step-3-mobile" style="transition-delay: 200ms;">
+                                <div class="relative mb-8 step-circle-container">
+                                    <div class="w-32 h-32 mx-auto relative step-circle">
+                                        <!-- Outer Ring -->
+                                        <div class="absolute inset-0 rounded-full border-4 border-blue-200"></div>
+                                        <!-- Inner Circle -->
+                                        <div class="absolute inset-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                            <span class="text-white font-bold text-3xl step-number">03</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mt-4 sm:mt-6">
-                                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Get Money</h3>
-                                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Once approved, the loan amount is transferred directly to your bank account within 24 hours.</p>
+                                <div class="bg-white p-6 rounded-xl shadow-lg border border-blue-100 step-card">
+                                    <h3 class="text-xl font-bold text-blue-600 mb-3 step-title">Online Document Submission</h3>
+                                    <p class="text-sm text-slate-600 leading-relaxed step-description">Submit proof of your address, salary slips, Aadhaar card, PAN card, etc.</p>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -415,34 +501,101 @@
         </section>
 
         <!-- Our Partners Section -->
-        <section id="partners" class="py-20 sm:py-28 bg-slate-50 relative overflow-hidden">
+        <section id="partners" class="py-20 sm:py-28 bg-white relative overflow-hidden">
             <!-- Decorative Elements -->
             <div class="absolute top-10 left-1/4 w-20 h-20 border-2 border-blue-200 rounded-full opacity-20"></div>
             <div class="absolute bottom-10 right-1/4 w-16 h-16 border-2 border-purple-200 rounded-full opacity-30"></div>
 
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-4xl mx-auto revealable">
-                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our <span class="text-blue-600">Partners</span></h2>
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our <span class="text-blue-600">Partners</span> from across the industry</h2>
                     <p class="mt-5 text-lg text-slate-600">We partner with India's leading banks and NBFCs to offer you the best loan deals.</p>
                 </div>
 
-                <!-- Partners Logos Marquee -->
-                <div class="mt-16 marquee overflow-hidden">
-                    <div class="marquee-content-reverse flex items-center space-x-16 md:space-x-24">
-                        <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/Kotak_Mahindra_Bank_logo 2.webp" alt="Kotak Mahindra Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/tata capital logo.webp" alt="Tata Capital" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/sbi logo.webp" alt="State Bank of India" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/IDFC-logo-website.webp" alt="IDFC Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/indusind-bank1.webp" alt="IndusInd Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/Punjab-National-Bank-logo.webp" alt="Punjab National Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/union bank logo.webp" alt="Union Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <!-- Duplicate for seamless loop -->
-                        <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
-                        <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-12 md:h-16 opacity-90 hover:opacity-100 transition-all duration-300 transform hover:scale-110 object-contain">
+                <!-- Partners Grid Layout -->
+                <div class="mt-16 max-w-6xl mx-auto">
+                    <!-- Desktop Layout: 2 rows of 5 partners each -->
+                    <div class="hidden md:block">
+                        <!-- First Row - 5 Partners -->
+                        <div class="grid grid-cols-5 gap-6 mb-8">
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/IDFC-logo-website.webp" alt="IDFC Bank" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/Kotak_Mahindra_Bank_logo 2.webp" alt="Kotak Mahindra Bank" class="h-12 w-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Second Row - 5 Partners -->
+                        <div class="grid grid-cols-5 gap-6">
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/tata capital logo.webp" alt="Tata Capital" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/Yes-Bank-logo.webp" alt="Yes Bank" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/indusind-bank1.webp" alt="IndusInd Bank" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/sbi logo.webp" alt="SBI" class="h-12 w-full object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img src="images/Punjab-National-Bank-logo.webp" alt="Punjab National Bank" class="h-12 w-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Layout: 2 columns with 5 partners each -->
+                    <div class="md:hidden">
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Left Column - 5 Partners -->
+                            <div class="space-y-4">
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/Kotak_Mahindra_Bank_logo 2.webp" alt="Kotak Mahindra Bank" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/Yes-Bank-logo.webp" alt="Yes Bank" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/sbi logo.webp" alt="SBI" class="h-10 w-full object-contain">
+                                </div>
+                            </div>
+
+                            <!-- Right Column - 5 Partners -->
+                            <div class="space-y-4">
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/IDFC-logo-website.webp" alt="IDFC Bank" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/tata capital logo.webp" alt="Tata Capital" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/indusind-bank1.webp" alt="IndusInd Bank" class="h-10 w-full object-contain">
+                                </div>
+                                <div class="bg-white p-3 rounded-xl shadow-lg border border-gray-100">
+                                    <img src="images/Punjab-National-Bank-logo.webp" alt="Punjab National Bank" class="h-10 w-full object-contain">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -616,21 +769,21 @@
                     <div class="revealable" style="transition-delay: 200ms;">
                         <div class="bg-gradient-to-br from-blue-600 to-purple-700 p-8 rounded-2xl text-white shadow-2xl">
                             <h3 class="text-2xl font-bold mb-4">Quick Apply Form</h3>
-                            <form class="space-y-4">
-                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
-                                <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
-                                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
-                                <select class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-white/50" style="color: white;">
+                            <div class="space-y-4">
+                                <input type="text" id="quick-full-name" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
+                                <input type="tel" id="quick-phone" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50">
+                                <select id="quick-loan-amount" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-white/50" style="color: white;">
                                     <option value="" style="color: black; background-color: white;">Loan Amount</option>
                                     <option value="1-5" style="color: black; background-color: white;">₹1-5 Lakhs</option>
                                     <option value="5-10" style="color: black; background-color: white;">₹5-10 Lakhs</option>
                                     <option value="10-25" style="color: black; background-color: white;">₹10-25 Lakhs</option>
                                     <option value="25+" style="color: black; background-color: white;">₹25+ Lakhs</option>
                                 </select>
-                                <button type="submit" class="w-full bg-white text-blue-600 font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
-                                    Get Instant Quote
+                                <button type="button" id="quick-apply-btn" class="w-full bg-white text-blue-600 font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                                    Continue Application
                                 </button>
-                            </form>
+                                <p class="text-xs text-blue-100 text-center">Fill basic details and continue with our secure application process</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -679,7 +832,7 @@
                     <h4 class="font-semibold text-slate-200 mb-4">Quick Links</h4>
                     <ul class="space-y-3 text-sm">
                         <li><a href="#home" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Home</span></a></li>
-                        <li><a href="#services" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Services</span></a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Products</span></a></li>
                         <li><a href="#process" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Process</span></a></li>
                         <li><a href="#partners" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Partners</span></a></li>
                     </ul>
@@ -687,10 +840,10 @@
                 <div>
                     <h4 class="font-semibold text-slate-200 mb-4">Loan Types</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Personal Loan</span></a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Travel Loan</span></a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Wedding Loan</span></a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Medical Emergency</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Fresh Personal Loan</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Balance Transfer Personal Loan</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Overdraft Personal Loan</span></a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors flex items-center space-x-2"><span>→</span><span>Home Renovation</span></a></li>
                     </ul>
                 </div>
                 <div>
@@ -764,6 +917,342 @@
                         <div class="flex justify-between py-2 border-b border-blue-500/50"><span>Principal Amount</span><span id="principalResult" class="font-semibold">₹ 5,00,000</span></div>
                         <div class="flex justify-between py-2 border-b border-blue-500/50"><span>Total Interest</span><span id="interestResult" class="font-semibold">₹ 1,74,932</span></div>
                         <div class="flex justify-between py-2"><span>Total Payable</span><span id="totalResult" class="font-semibold">₹ 6,74,932</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi-Step Loan Application Modal -->
+    <div id="loan-application-modal" class="modal fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-2 sm:p-4 z-50 opacity-0 pointer-events-none">
+        <div id="loan-application-modal-content" class="bg-white rounded-xl sm:rounded-2xl shadow-2xl w-full max-w-4xl relative transform max-h-[90vh] overflow-y-auto">
+            <button id="close-loan-application-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors z-20">
+                <span class="sr-only">Close</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+
+            <!-- Form Header -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-t-xl relative overflow-hidden">
+                <!-- Background Illustration -->
+                <div class="absolute top-0 right-0 w-48 h-32 opacity-20">
+                    <svg viewBox="0 0 200 120" class="w-full h-full">
+                        <!-- Money/Loan Illustration -->
+                        <circle cx="160" cy="30" r="25" fill="currentColor" opacity="0.3"/>
+                        <rect x="140" y="45" width="40" height="25" rx="3" fill="currentColor" opacity="0.4"/>
+                        <rect x="145" y="50" width="30" height="3" rx="1" fill="currentColor" opacity="0.6"/>
+                        <rect x="145" y="55" width="20" height="3" rx="1" fill="currentColor" opacity="0.6"/>
+                        <rect x="145" y="60" width="25" height="3" rx="1" fill="currentColor" opacity="0.6"/>
+                        <!-- Coins -->
+                        <circle cx="120" cy="80" r="12" fill="currentColor" opacity="0.3"/>
+                        <circle cx="135" cy="85" r="10" fill="currentColor" opacity="0.4"/>
+                        <circle cx="150" cy="90" r="8" fill="currentColor" opacity="0.5"/>
+                        <!-- Arrow pointing up (growth) -->
+                        <path d="M80 100 L90 80 L100 100 M90 80 L90 110" stroke="currentColor" stroke-width="3" fill="none" opacity="0.4"/>
+                    </svg>
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl font-bold mb-2">Get your Personal Loan with just 4 easy Steps</h2>
+                    <p class="text-blue-100">BEST DEAL GUARANTEED</p>
+                </div>
+            </div>
+
+            <!-- Step Progress Indicator -->
+            <div class="flex justify-center items-center p-6 bg-gray-50">
+                <div class="flex items-center space-x-4">
+                    <div class="step-indicator active" data-step="1">
+                        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">1</div>
+                        <span class="text-sm mt-2 block text-center">Basic Details</span>
+                    </div>
+                    <div class="w-8 h-0.5 bg-gray-300"></div>
+                    <div class="step-indicator" data-step="2">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center font-bold">2</div>
+                        <span class="text-sm mt-2 block text-center">Personal Details</span>
+                    </div>
+                    <div class="w-8 h-0.5 bg-gray-300"></div>
+                    <div class="step-indicator" data-step="3">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center font-bold">3</div>
+                        <span class="text-sm mt-2 block text-center">Financial Details</span>
+                    </div>
+                    <div class="w-8 h-0.5 bg-gray-300"></div>
+                    <div class="step-indicator" data-step="4">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center font-bold">4</div>
+                        <span class="text-sm mt-2 block text-center">Get Banks</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Steps -->
+            <div class="p-6">
+                <!-- Step 1: Basic Details -->
+                <div id="step-1" class="form-step active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="fullName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Full Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Work Profile *</label>
+                            <select id="workProfile" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select Work Profile</option>
+                                <option value="salaried">Salaried</option>
+                                <option value="self-employed">Self-Employed</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Loan Category *</label>
+                            <select id="loanCategory" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select Loan Category</option>
+                                <option value="fresh-loan">Fresh Loan</option>
+                                <option value="overdraft-loan">Overdraft Loan</option>
+                                <option value="balance-transfer">Balance Transfer Personal Loan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <span id="incomeLabel">Monthly Income *</span>
+                            </label>
+                            <input type="number" id="monthlyIncome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Amount">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Loan Amount *</label>
+                            <input type="number" id="loanAmount" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Loan Amount">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">City *</label>
+                            <select id="city" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select City</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="pune">Pune</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Mobile Number *</label>
+                            <input type="tel" id="mobileNumber" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Mobile Number">
+                        </div>
+                    </div>
+                    <div class="flex justify-end mt-6">
+                        <button id="next-step-1" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Personal Details -->
+                <div id="step-2" class="form-step hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Email Address">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Date of Birth *</label>
+                            <input type="date" id="dob" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company Name *</label>
+                            <input type="text" id="companyName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Company Name">
+                        </div>
+
+                        <!-- Self-Employed specific fields -->
+                        <div id="self-employed-fields" class="hidden md:col-span-2">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">PAN Number *</label>
+                                    <input type="text" id="panNumber" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter PAN Number">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Ownership Status *</label>
+                                    <select id="ownershipStatus" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select Ownership Status</option>
+                                        <option value="owned">Owned</option>
+                                        <option value="rented">Rented</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">How old is the business? *</label>
+                                    <select id="businessAge" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select Business Age</option>
+                                        <option value="0-1">0-1 years</option>
+                                        <option value="1-3">1-3 years</option>
+                                        <option value="3-5">3-5 years</option>
+                                        <option value="5+">5+ years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Salaried specific fields -->
+                        <div id="salaried-fields" class="hidden">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Current EMI *</label>
+                            <input type="number" id="currentEmi" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Current EMI">
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <button id="prev-step-2" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-colors">Previous</button>
+                        <button id="next-step-2" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Financial Details -->
+                <div id="step-3" class="form-step hidden">
+                    <!-- Self-Employed Financial Details -->
+                    <div id="self-employed-financial" class="hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Residential Ownership *</label>
+                                <select id="residentialOwnershipSelfEmployed" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select Residential Ownership</option>
+                                    <option value="owned-self">Owned by - Self/Spouse</option>
+                                    <option value="owned-parents">Owned by - Parents</option>
+                                    <option value="owned-siblings">Owned by - Siblings</option>
+                                    <option value="rented-family">Rented - With Family</option>
+                                    <option value="rented-friends">Rented - With Friends</option>
+                                    <option value="rented-alone">Rented - Staying Alone</option>
+                                    <option value="hostel-pg">Hostel/PG</option>
+                                    <option value="company-govt">Company/Govt Provided</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">CIBIL Score *</label>
+                                <select id="cibilScoreSelfEmployed" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select CIBIL Score</option>
+                                    <option value="below-650">Below 650</option>
+                                    <option value="above-650">Above 650</option>
+                                    <option value="dont-know">Don't Know</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">PAN Number *</label>
+                                <input type="text" id="panNumberSelfEmployed" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter PAN Number" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="Please enter a valid PAN number (e.g., ABCDE1234F)">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Gross Annual Income *</label>
+                                <input type="number" id="grossAnnualIncome" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Gross Annual Income">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">GST Registration *</label>
+                                <select id="gstReg" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select GST Registration</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Current EMI *</label>
+                                <input type="number" id="currentEmiSelfEmployed" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Current EMI">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Business Type *</label>
+                                <select id="businessType" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select Business Type</option>
+                                    <option value="trader">Trader</option>
+                                    <option value="service-provider">Service Provider</option>
+                                    <option value="manufacturer">Manufacturer</option>
+                                    <option value="retailer">Retailer</option>
+                                    <option value="e-commerce">E-commerce</option>
+                                    <option value="distributor">Distributor</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Industry Name *</label>
+                                <input type="text" id="industryName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter Industry Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Salaried Financial Details -->
+                    <div id="salaried-financial" class="hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Residential Ownership *</label>
+                                <select id="residentialOwnership" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select Residential Ownership</option>
+                                    <option value="owned-self">Owned by - Self/Spouse</option>
+                                    <option value="owned-parents">Owned by - Parents</option>
+                                    <option value="owned-siblings">Owned by - Siblings</option>
+                                    <option value="rented-family">Rented - With Family</option>
+                                    <option value="rented-friends">Rented - With Friends</option>
+                                    <option value="rented-alone">Rented - Staying Alone</option>
+                                    <option value="hostel-pg">Hostel/PG</option>
+                                    <option value="company-govt">Company/Govt Provided</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Salary Type *</label>
+                                <select id="salaryType" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select Salary Type</option>
+                                    <option value="cash">Cash</option>
+                                    <option value="cheque">Cheque</option>
+                                    <option value="direct-bank">Direct Bank</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">CIBIL Score *</label>
+                                <select id="cibilScore" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select CIBIL Score</option>
+                                    <option value="below-650">Below 650</option>
+                                    <option value="above-650">Above 650</option>
+                                    <option value="dont-know">Don't Know</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">PAN Number *</label>
+                                <input type="text" id="panNumberSalaried" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter PAN Number" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="Please enter a valid PAN number (e.g., ABCDE1234F)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <button id="prev-step-3" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-colors">Previous</button>
+                        <button id="next-step-3" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Get Banks -->
+                <div id="step-4" class="form-step hidden">
+                    <div class="text-center py-8">
+                        <div class="mb-6">
+                            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Congratulations!</h3>
+                            <p class="text-lg text-gray-600 mb-6">You could be eligible for loans from all the below partners. We will confirm with you soon!</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/HDFC_Bank_Logo.webp" alt="HDFC Bank" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/Axis_Bank_logo.svg 2.webp" alt="Axis Bank" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/bajaj-finserv-logo.webp" alt="Bajaj Finserv" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/Kotak_Mahindra_Bank_logo 2.webp" alt="Kotak Bank" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/tata capital logo.webp" alt="Tata Capital" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/sbi logo.webp" alt="SBI" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/IDFC-logo-website.webp" alt="IDFC Bank" class="h-12 mx-auto object-contain">
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md border">
+                                <img src="images/Yes-Bank-logo.webp" alt="Yes Bank" class="h-12 mx-auto object-contain">
+                            </div>
+                        </div>
+
+                        <button id="submit-application" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+                            Submit Application
+                        </button>
                     </div>
                 </div>
             </div>

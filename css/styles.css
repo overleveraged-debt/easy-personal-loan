@@ -320,19 +320,290 @@ body {
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-content {
-        padding: 2rem 1rem;
+        padding: 1rem;
     }
-    
+
+    /* Fix hero section container on mobile */
+    .container.mx-auto.max-w-7xl {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Adjust hero section height on mobile */
+    .relative.min-h-\[calc\(90vh-6rem\)\] {
+        min-height: calc(60vh - 6rem) !important;
+    }
+
     .testimonial-item {
         padding: 1rem;
     }
-    
+
     .faq-item {
         margin-bottom: 1rem;
     }
-    
+
     .stats-section {
         padding: 2rem 0;
+    }
+
+    /* Mobile Form Modal */
+    #loan-application-modal-content {
+        margin: 0.5rem !important;
+        max-height: 95vh;
+        width: calc(100vw - 1rem) !important;
+        max-width: calc(100vw - 1rem) !important;
+        border-radius: 1rem !important;
+    }
+
+    /* Mobile Form Modal Header */
+    #loan-application-modal-content .bg-gradient-to-r {
+        padding: 1rem !important;
+        border-radius: 1rem 1rem 0 0 !important;
+    }
+
+    #loan-application-modal-content .bg-gradient-to-r h2 {
+        font-size: 1.25rem !important;
+        line-height: 1.75rem !important;
+    }
+
+    /* Mobile Form Modal Content */
+    #loan-application-modal-content .p-6 {
+        padding: 1rem !important;
+    }
+
+    /* Mobile Step Progress Indicator */
+    #loan-application-modal-content .flex.justify-center.items-center.p-6 {
+        padding: 0.75rem !important;
+        overflow-x: auto;
+    }
+
+    #loan-application-modal-content .flex.items-center.space-x-4 {
+        gap: 0.5rem !important;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    #loan-application-modal-content .step-indicator {
+        min-width: 50px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    #loan-application-modal-content .step-indicator .w-10 {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+        font-size: 0.75rem !important;
+        margin: 0 auto;
+    }
+
+    #loan-application-modal-content .step-indicator span {
+        font-size: 0.6rem !important;
+        white-space: nowrap;
+        line-height: 1.2;
+        margin-top: 0.25rem !important;
+        display: block;
+    }
+
+    /* Reduce connector line width */
+    #loan-application-modal-content .w-8.h-0\\.5 {
+        width: 1rem !important;
+        height: 1px !important;
+    }
+
+    /* Mobile Form Fields */
+    #loan-application-modal-content .grid.grid-cols-1.md\\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+
+    #loan-application-modal-content input,
+    #loan-application-modal-content select {
+        padding: 0.75rem !important;
+        font-size: 1rem !important;
+    }
+
+    /* Mobile Form Fields */
+    .form-step input,
+    .form-step select,
+    .form-step textarea {
+        width: 100% !important;
+        padding: 0.75rem !important;
+        font-size: 16px !important; /* Prevents zoom on iOS */
+        border-radius: 0.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* Mobile Form Buttons */
+    .form-step button {
+        width: 100% !important;
+        padding: 0.875rem !important;
+        font-size: 1rem !important;
+        margin: 0.5rem 0 !important;
+    }
+
+    /* Mobile Step Indicators */
+    .step-indicator {
+        margin: 0.5rem !important;
+        padding: 0.5rem !important;
+    }
+
+    /* Prevent horizontal scroll */
+    .form-step {
+        overflow-x: hidden !important;
+        padding: 0 !important;
+    }
+
+    .step-indicator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-indicator span {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Mobile Hero Images */
+    .hero-content img {
+        max-width: 280px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    /* Mobile Hero Carousel Dots */
+    #carousel-dots {
+        bottom: 20px !important;
+        z-index: 30;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 8px 16px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Mobile Steps Section - Fixed Layout */
+    .mobile-steps-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        align-items: center !important;
+    }
+
+    /* First step takes full width in first row */
+    .mobile-steps-layout > div:first-child {
+        width: 100%;
+        max-width: 320px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Container for steps 2 and 3 in second row */
+    .mobile-steps-row-2 {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem !important;
+    }
+
+    /* Ensure steps in second row are properly sized */
+    .mobile-steps-row-2 > div {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Force step circles to be visible on mobile */
+    .mobile-steps-layout .step-1-mobile .step-circle-container,
+    .mobile-steps-layout .step-2-mobile .step-circle-container,
+    .mobile-steps-layout .step-3-mobile .step-circle-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Show step circles on mobile */
+    .mobile-steps-layout .step-circle-container {
+        display: block !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Adjust step circles for mobile */
+    .mobile-steps-layout .step-circle {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+    .mobile-steps-layout .step-number {
+        font-size: 1.25rem !important;
+    }
+
+    /* Improve mobile step cards */
+    .mobile-steps-layout .step-card {
+        padding: 1rem !important;
+        margin: 0 !important;
+    }
+
+    .mobile-steps-layout .step-title {
+        font-size: 0.9rem !important;
+        line-height: 1.3 !important;
+    }
+
+    .mobile-steps-layout .step-description {
+        font-size: 0.75rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Hide connecting arrows on mobile */
+    .mobile-steps-layout .hidden.md\\:block {
+        display: none !important;
+    }
+
+    /* Force step circles to be visible on mobile */
+    .mobile-steps-layout .w-32.h-32 {
+        width: 5rem !important;
+        height: 5rem !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .mobile-steps-layout .absolute.inset-0,
+    .mobile-steps-layout .absolute.inset-2 {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Ensure step circles are visible */
+    .step-circle-container,
+    .step-circle {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .step-indicator div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .step-indicator div span {
+        font-size: 1.5rem;
+    }
+
+    /* Ensure proper animation for mobile steps */
+    .revealable {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    /* Mobile Partners - Now handled by HTML structure */
+
+    /* Mobile Products Dropdown - Hide on mobile */
+    .group .absolute {
+        display: none;
     }
 }
 
@@ -352,6 +623,188 @@ body {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Multi-Step Form Styles */
+.form-step {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.form-step.hidden {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.form-step.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step-indicator {
+    transition: all 0.3s ease-in-out;
+}
+
+.step-indicator.active {
+    transform: scale(1.1);
+}
+
+.step-indicator div {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Form Input Styles */
+.form-step input:focus,
+.form-step select:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.form-step input.border-red-500,
+.form-step select.border-red-500 {
+    border-color: #ef4444;
+    ring-color: #ef4444;
+}
+
+/* Products Dropdown Styles */
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1 !important;
+}
+
+.group:hover .group-hover\:visible {
+    visibility: visible !important;
+}
+
+/* Enhanced dropdown visibility */
+.group:hover > div[class*="group-hover:opacity-100"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+/* Ensure dropdown stays visible when hovering over it */
+.group > div[class*="group-hover:opacity-100"]:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Fix header overflow for dropdown */
+header .relative.overflow-hidden {
+    overflow: visible !important;
+}
+
+/* Ensure dropdown appears above everything */
+.group .absolute {
+    z-index: 999999 !important;
+    position: absolute !important;
+}
+
+/* Desktop dropdown positioning fix */
+@media (min-width: 769px) {
+    .group .absolute {
+        display: block !important;
+    }
+}
+
+/* Mobile Responsive Hero Images */
+@media (max-width: 768px) {
+    .hero-content img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    /* Ensure hero carousel items are properly sized on mobile */
+    .carousel-item img {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 250px !important;
+        max-height: 400px !important;
+        object-fit: cover !important;
+    }
+
+    /* Fix mobile hero section spacing */
+    .hero-content {
+        padding: 1rem !important;
+    }
+
+    /* Ensure revealable animations work on mobile */
+    .revealable {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        transition: all 0.6s ease-out !important;
+    }
+
+    /* Mobile step animations */
+    .mobile-steps-layout .revealable {
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .mobile-steps-layout .revealable:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .mobile-steps-row-2 .revealable:nth-child(1) {
+        animation-delay: 0.4s;
+    }
+
+    .mobile-steps-row-2 .revealable:nth-child(2) {
+        animation-delay: 0.6s;
+    }
+}
+
+/* Keyframe for mobile animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced Step Circles */
+.step-indicator div {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-indicator.active div {
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* Desktop layout preservation */
+@media (min-width: 769px) {
+    .mobile-steps-row-2 {
+        display: contents !important;
+    }
+
+    .mobile-steps-layout {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: auto !important;
+        gap: 2rem !important;
+    }
+
+    .mobile-steps-layout > div:first-child {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: stretch;
+        max-width: none;
+    }
+}
+
+/* Partners Section Enhancements */
+#partners .bg-white {
+    transition: all 0.3s ease-in-out;
+}
+
+#partners .bg-white:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Custom Scrollbar */
